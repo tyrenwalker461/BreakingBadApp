@@ -10,12 +10,23 @@ struct EpisodeView: View {
             ForEach(series){ user in
     
                 VStack(alignment: .leading){
-                Text("Season # " + user.season)
-              
-                Text("Episode # " + user.episode)
-               
+                HStack(
+                    alignment: .top,
+                    spacing: 5
+                ){
+                Section(header: Text("Season #")) {
+                    Text(user.season)
+                                }
+                }
+                HStack(
+                        alignment: .top,
+                        spacing: 5
+                    ){
+                    Section(header: Text("Episode #")) {
+                        Text(user.episode)
+                }
+                }
                 Text(user.title)
-               
         
                 }
                
