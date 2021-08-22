@@ -103,6 +103,9 @@
 		F9DF2F7F26D1B3AC0073F056 = {
 			isa = PBXGroup;
 			children = (
+				F9DF2FD326D20D740073F056 /* Views */,
+				F9DF2FD526D20D8A0073F056 /* Models */,
+				F9DF2FD626D20D990073F056 /* ViewModels */,
 				F9DF2F8426D1B3AD0073F056 /* Shared */,
 				F9DF2F8E26D1B3B20073F056 /* iOS */,
 				F9DF2F9526D1B3B20073F056 /* macOS */,
@@ -115,9 +118,6 @@
 		F9DF2F8426D1B3AD0073F056 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F9DF2FD626D20D990073F056 /* ViewModels */,
-				F9DF2FD526D20D8A0073F056 /* Models */,
-				F9DF2FD326D20D740073F056 /* Views */,
 				F9DF2F8726D1B3B20073F056 /* Assets.xcassets */,
 			);
 			path = Shared;
