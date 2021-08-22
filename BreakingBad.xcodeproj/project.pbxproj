@@ -100,12 +100,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F90C56D126D2A10700441118 /* App Code */ = {
+			isa = PBXGroup;
+			children = (
+				F9DF2FD626D20D990073F056 /* ViewModels */,
+				F9DF2FD526D20D8A0073F056 /* Models */,
+				F9DF2FD326D20D740073F056 /* Views */,
+			);
+			path = "App Code";
+			sourceTree = "<group>";
+		};
 		F9DF2F7F26D1B3AC0073F056 = {
 			isa = PBXGroup;
 			children = (
-				F9DF2FD326D20D740073F056 /* Views */,
-				F9DF2FD526D20D8A0073F056 /* Models */,
-				F9DF2FD626D20D990073F056 /* ViewModels */,
+				F90C56D126D2A10700441118 /* App Code */,
 				F9DF2F8426D1B3AD0073F056 /* Shared */,
 				F9DF2F8E26D1B3B20073F056 /* iOS */,
 				F9DF2F9526D1B3B20073F056 /* macOS */,
