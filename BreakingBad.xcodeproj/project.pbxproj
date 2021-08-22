@@ -13,8 +13,16 @@
 		F9DF2FAF26D1B3B20073F056 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */; };
 		F9DF2FB226D1B3B20073F056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DF2F8726D1B3B20073F056 /* Assets.xcassets */; };
 		F9DF2FB326D1B3B20073F056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DF2F8726D1B3B20073F056 /* Assets.xcassets */; };
-		F9DF2FC326D1B4AF0073F056 /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */; };
-		F9DF2FC426D1B4AF0073F056 /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */; };
+		F9DF2FD826D20DE90073F056 /* TVShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FD726D20DE90073F056 /* TVShowDetailView.swift */; };
+		F9DF2FD926D20DE90073F056 /* TVShowDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FD726D20DE90073F056 /* TVShowDetailView.swift */; };
+		F9DF2FDB26D20DF80073F056 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FDA26D20DF80073F056 /* EpisodesView.swift */; };
+		F9DF2FDC26D20DF80073F056 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FDA26D20DF80073F056 /* EpisodesView.swift */; };
+		F9DF2FDE26D20E050073F056 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FDD26D20E050073F056 /* MainView.swift */; };
+		F9DF2FDF26D20E050073F056 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FDD26D20E050073F056 /* MainView.swift */; };
+		F9DF2FE126D20E640073F056 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE026D20E640073F056 /* TVShow.swift */; };
+		F9DF2FE226D20E640073F056 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE026D20E640073F056 /* TVShow.swift */; };
+		F9DF2FE426D20EC50073F056 /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */; };
+		F9DF2FE526D20EC50073F056 /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +56,11 @@
 		F9DF2FA726D1B3B20073F056 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DF2FAB26D1B3B20073F056 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F9DF2FAD26D1B3B20073F056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsView.swift; sourceTree = "<group>"; };
+		F9DF2FD726D20DE90073F056 /* TVShowDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailView.swift; sourceTree = "<group>"; };
+		F9DF2FDA26D20DF80073F056 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
+		F9DF2FDD26D20E050073F056 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F9DF2FE026D20E640073F056 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +110,9 @@
 		F9DF2F8426D1B3AD0073F056 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */,
-				F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */,
+				F9DF2FD626D20D990073F056 /* ViewModels */,
+				F9DF2FD526D20D8A0073F056 /* Models */,
+				F9DF2FD326D20D740073F056 /* Views */,
 				F9DF2F8726D1B3B20073F056 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -149,6 +162,33 @@
 				F9DF2FAD26D1B3B20073F056 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		F9DF2FD326D20D740073F056 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */,
+				F9DF2FD726D20DE90073F056 /* TVShowDetailView.swift */,
+				F9DF2FDA26D20DF80073F056 /* EpisodesView.swift */,
+				F9DF2FDD26D20E050073F056 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F9DF2FD526D20D8A0073F056 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9DF2FE026D20E640073F056 /* TVShow.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F9DF2FD626D20D990073F056 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DF2FC326D1B4AF0073F056 /* ShowsView.swift in Sources */,
+				F9DF2FDB26D20DF80073F056 /* EpisodesView.swift in Sources */,
+				F9DF2FDE26D20E050073F056 /* MainView.swift in Sources */,
+				F9DF2FD826D20DE90073F056 /* TVShowDetailView.swift in Sources */,
+				F9DF2FE426D20EC50073F056 /* ShowViewModel.swift in Sources */,
+				F9DF2FE126D20E640073F056 /* TVShow.swift in Sources */,
 				F9DF2FAE26D1B3B20073F056 /* BreakingBadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DF2FC426D1B4AF0073F056 /* ShowsView.swift in Sources */,
+				F9DF2FDC26D20DF80073F056 /* EpisodesView.swift in Sources */,
+				F9DF2FDF26D20E050073F056 /* MainView.swift in Sources */,
+				F9DF2FD926D20DE90073F056 /* TVShowDetailView.swift in Sources */,
+				F9DF2FE526D20EC50073F056 /* ShowViewModel.swift in Sources */,
+				F9DF2FE226D20E640073F056 /* TVShow.swift in Sources */,
 				F9DF2FAF26D1B3B20073F056 /* BreakingBadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
