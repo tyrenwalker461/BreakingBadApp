@@ -1,20 +1,57 @@
-//
-//  ShowViews.swift
-//  BreakingBad
-//
-//  Created by MaKenna Dalcour on 8/22/21.
-//
-
 import SwiftUI
+import SDWebImageSwiftUI
 
-struct ShowViews: View {
+
+struct ShowsView: View {
+    @ObservedObject var showViewModel = ShowViewModel()
+    
+    let columns = [
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16),
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16),
+        GridItem(.flexible(minimum: 100, maximum: 200), spacing: 16),
+    ]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Color.orange
+            .ignoresSafeArea()
+                .overlay(
+            ScrollView {
+                LazyVGrid(columns: columns, content: {
+                    ForEach(showViewModel.shows) { show in
+                        NavigationLink(
+                            destination: TVShowDetailView(tvShow: show),
+                            label: {
+                                VStack(alignment: .leading){
+                                WebImage(url: show.img)
+                                    .resizable()
+                                    .indicator(.activity)
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(height: 150)
+                                    .cornerRadius(8)
+                                    VStack(alignment: .leading){
+                                        Text(show.nickname)
+                                    }
+                                }
+                            }
+                        )
+                    }
+                }
+                )
+                .padding()
+            }
+            )
+            .navigationTitle("Breaking Bad Fans")
+            .accentColor(.black)
+            .onAppear(perform: {
+                showViewModel.fetchTVShows()
+            })
+        }
     }
 }
 
-struct ShowViews_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ShowViews()
+        ShowsView()
+        
     }
 }

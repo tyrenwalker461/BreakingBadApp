@@ -1,17 +1,24 @@
-//
-//  MainView.swift
-//  BreakingBad
-//
-//  Created by MaKenna Dalcour on 8/22/21.
-//
 
 import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            ShowsView()
+                .tabItem{
+                    Label("Characters",systemImage: "person.3" )
+                }
+            EpisodeView()
+                .tabItem{
+                    Label("Episodes",systemImage: "list.number" )
+                }
+        }
+        .onAppear() {
+            UITabBar.appearance().barTintColor = .white
+        }
+        .accentColor(.black)
+        }
     }
-}
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {

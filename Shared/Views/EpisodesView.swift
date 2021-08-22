@@ -1,20 +1,72 @@
-//
-//  EpisodesView.swift
-//  BreakingBad
-//
-//  Created by MaKenna Dalcour on 8/22/21.
-//
 
 import SwiftUI
 
-struct EpisodesView: View {
+struct EpisodeView: View {
+    @State var series = [bbEpisodes]()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+        NavigationView{
+        List{
+            ForEach(series){ user in
+    
+                VStack(alignment: .leading){
+                Text("Season # " + user.season)
+              
+                Text("Episode # " + user.episode)
+               
+                Text(user.title)
+               
+        
+                }
+               
+            }
+            .listRowBackground(Color.orange)
+            
+        }
+        .navigationTitle("Episodes")
+        
+}
+       
+        .onAppear(perform: {
+            let url = URL(string: "https://www.breakingbadapi.com/api/episodes")!
+            URLSession.shared.dataTask(with: url) { data, response, networkingError in
+                if let networkingError = networkingError{
+                    print(networkingError.localizedDescription)
+                }
+                else {
+                    if let data = data {
+                        let decoder = JSONDecoder()
+                        do{
+                           let series = try decoder.decode([bbEpisodes].self, from: data)
+                            self.series = series
+                        } catch {
+                            print(error.localizedDescription)
+                        }
+                        
+                    }
+                }
+            }.resume()
+        })
+}
 }
 
 struct EpisodesView_Previews: PreviewProvider {
     static var previews: some View {
-        EpisodesView()
+        EpisodeView()
     }
 }
+
+struct bbEpisodes: Decodable, Identifiable{
+    var id: Int
+    var title: String
+    var season: String
+    var episode: String
+    
+    enum CodingKeys: String, CodingKey{
+        case id = "episode_id"
+        case title = "title"
+        case season = "season"
+        case episode = "episode"
+       }
+}
+//cant seem to put orange color on outter edges
