@@ -21,15 +21,15 @@ struct ShowsView: View {
                         NavigationLink(
                             destination: TVShowDetailView(tvShow: show),
                             label: {
-                                VStack(alignment: .leading){
+                                VStack(alignment: .center){
                                 WebImage(url: show.img)
                                     .resizable()
                                     .indicator(.activity)
-                                    .aspectRatio(contentMode: .fit)
                                     .frame(height: 150)
                                     .cornerRadius(8)
                                     VStack(alignment: .leading){
                                         Text(show.nickname)
+                                     
                                     }
                                 }
                             }
