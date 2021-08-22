@@ -11,10 +11,10 @@
 		F9DF2FAC26D1B3B20073F056 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FAB26D1B3B20073F056 /* Tests_macOS.swift */; };
 		F9DF2FAE26D1B3B20073F056 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */; };
 		F9DF2FAF26D1B3B20073F056 /* BreakingBadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */; };
-		F9DF2FB026D1B3B20073F056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2F8626D1B3AD0073F056 /* ContentView.swift */; };
-		F9DF2FB126D1B3B20073F056 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2F8626D1B3AD0073F056 /* ContentView.swift */; };
 		F9DF2FB226D1B3B20073F056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DF2F8726D1B3B20073F056 /* Assets.xcassets */; };
 		F9DF2FB326D1B3B20073F056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DF2F8726D1B3B20073F056 /* Assets.xcassets */; };
+		F9DF2FC326D1B4AF0073F056 /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */; };
+		F9DF2FC426D1B4AF0073F056 /* ShowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakingBadApp.swift; sourceTree = "<group>"; };
-		F9DF2F8626D1B3AD0073F056 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9DF2F8726D1B3B20073F056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9DF2F8C26D1B3B20073F056 /* BreakingBad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakingBad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DF2F8F26D1B3B20073F056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		F9DF2FA726D1B3B20073F056 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DF2FAB26D1B3B20073F056 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		F9DF2FAD26D1B3B20073F056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F9DF2F8526D1B3AD0073F056 /* BreakingBadApp.swift */,
-				F9DF2F8626D1B3AD0073F056 /* ContentView.swift */,
+				F9DF2FC226D1B4AF0073F056 /* ShowsView.swift */,
 				F9DF2F8726D1B3B20073F056 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -308,7 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DF2FB026D1B3B20073F056 /* ContentView.swift in Sources */,
+				F9DF2FC326D1B4AF0073F056 /* ShowsView.swift in Sources */,
 				F9DF2FAE26D1B3B20073F056 /* BreakingBadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,7 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DF2FB126D1B3B20073F056 /* ContentView.swift in Sources */,
+				F9DF2FC426D1B4AF0073F056 /* ShowsView.swift in Sources */,
 				F9DF2FAF26D1B3B20073F056 /* BreakingBadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
