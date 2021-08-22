@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,9 @@
 		F9DF2FE226D20E640073F056 /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE026D20E640073F056 /* TVShow.swift */; };
 		F9DF2FE426D20EC50073F056 /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */; };
 		F9DF2FE526D20EC50073F056 /* ShowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */; };
+		F9DF2FE826D211520073F056 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F9DF2FE726D211520073F056 /* SDWebImageSwiftUI */; };
+		F9DF2FEA26D211F60073F056 /* ShowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE926D211F60073F056 /* ShowViews.swift */; };
+		F9DF2FEB26D211F60073F056 /* ShowViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF2FE926D211F60073F056 /* ShowViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,7 @@
 		F9DF2FDD26D20E050073F056 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F9DF2FE026D20E640073F056 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
 		F9DF2FE326D20EC50073F056 /* ShowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewModel.swift; sourceTree = "<group>"; };
+		F9DF2FE926D211F60073F056 /* ShowViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DF2FE826D211520073F056 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +176,7 @@
 				F9DF2FD726D20DE90073F056 /* TVShowDetailView.swift */,
 				F9DF2FDA26D20DF80073F056 /* EpisodesView.swift */,
 				F9DF2FDD26D20E050073F056 /* MainView.swift */,
+				F9DF2FE926D211F60073F056 /* ShowViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +213,9 @@
 			dependencies = (
 			);
 			name = "BreakingBad (iOS)";
+			packageProductDependencies = (
+				F9DF2FE726D211520073F056 /* SDWebImageSwiftUI */,
+			);
 			productName = "BreakingBad (iOS)";
 			productReference = F9DF2F8C26D1B3B20073F056 /* BreakingBad.app */;
 			productType = "com.apple.product-type.application";
@@ -298,6 +307,9 @@
 				Base,
 			);
 			mainGroup = F9DF2F7F26D1B3AC0073F056;
+			packageReferences = (
+				F9DF2FE626D211520073F056 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = F9DF2F8D26D1B3B20073F056 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +364,7 @@
 				F9DF2FDE26D20E050073F056 /* MainView.swift in Sources */,
 				F9DF2FD826D20DE90073F056 /* TVShowDetailView.swift in Sources */,
 				F9DF2FE426D20EC50073F056 /* ShowViewModel.swift in Sources */,
+				F9DF2FEA26D211F60073F056 /* ShowViews.swift in Sources */,
 				F9DF2FE126D20E640073F056 /* TVShow.swift in Sources */,
 				F9DF2FAE26D1B3B20073F056 /* BreakingBadApp.swift in Sources */,
 			);
@@ -365,6 +378,7 @@
 				F9DF2FDF26D20E050073F056 /* MainView.swift in Sources */,
 				F9DF2FD926D20DE90073F056 /* TVShowDetailView.swift in Sources */,
 				F9DF2FE526D20EC50073F056 /* ShowViewModel.swift in Sources */,
+				F9DF2FEB26D211F60073F056 /* ShowViews.swift in Sources */,
 				F9DF2FE226D20E640073F056 /* TVShow.swift in Sources */,
 				F9DF2FAF26D1B3B20073F056 /* BreakingBadApp.swift in Sources */,
 			);
@@ -734,6 +748,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9DF2FE626D211520073F056 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9DF2FE726D211520073F056 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9DF2FE626D211520073F056 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9DF2F8026D1B3AC0073F056 /* Project object */;
 }
